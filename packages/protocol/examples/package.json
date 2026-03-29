@@ -1,0 +1,35 @@
+{
+  "name": "register-test-agent",
+  "version": "0.1.0",
+  "description": "example agenet registration",
+  "scripts": {
+    "build": "npx tsx register-test-agent.ts"
+  },
+  "keywords": [
+    "solana",
+    "anchor",
+    "idl",
+    "protocol",
+    "zk",
+    "agents",
+    "coordination"
+  ],
+  "author": "Peramanathan Sathyamoorthy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p10ns11y/agenc-protocol.git",
+    "directory": "packages/protocol"
+  },
+  "homepage": "https://github.com/p10ns11y/agenc-protocol#readme",
+  "bugs": {
+    "url": "https://github.com/p10ns11y/agenc-protocol/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.32.1",
+    "@solana/web3.js": "^1.98.4"
+  }
+}
