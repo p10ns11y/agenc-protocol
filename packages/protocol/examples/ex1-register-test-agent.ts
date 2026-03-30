@@ -24,7 +24,7 @@ const provider = new AnchorProvider(connection, wallet, {});
 const program = new Program<AgencCoordination>(idl as AgencCoordination, provider);
 
 async function register() {
-  const agentIdU8 = new Uint8Array(crypto.randomBytes(32));
+  const agentIdU8 = Buffer.alloc(32, 1) // new Uint8Array(crypto.randomBytes(32));
   const agentId = Array.from(agentIdU8);
   const capabilities = new BN(15)
   // ["web", "infra for modern web", "typescript-migration", "playwright-e2e", "agenc"]
